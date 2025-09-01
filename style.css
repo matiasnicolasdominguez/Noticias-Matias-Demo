@@ -1,0 +1,141 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background: #222;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar a {
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    display: block;
+    transition: 0.6s;
+}
+.sidebar a:hover, .sidebar .closebtn:hover {
+    background: #444;
+
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    font-size: 2rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+body.sidebar-open #sidebar {
+    width: 250px;
+}
+.sidebar a {
+    position: relative;
+    top: 16px;
+    left: 10px
+}
+.peticion-btn {
+    position: absolute;
+    background-color: #132684;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: background 0.6s, transform 0.2s;
+}
+.peticion-btn:hover {
+    background-color: #10b9f7;
+    transform: translateY(-2px) scale(1.04);
+}
+
+body.dark-mode {
+    background: #181818;
+    color: #f1f1f1;
+      }
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: #e0e0e0;
+      }
+body.dark-mode button {
+    background: #333;
+    color: #fff;
+    border: 1px solid #888;
+      }
+.switch {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  width: 60px;
+  height: 34px;
+}
+.switch input {display:none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .15s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px; width: 26px;
+  left: 4px; bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #181818;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.animation {
+  animation: fadeIn 2s ease-in-out;
+}
+/* este es el menu de la barra horizontal superior */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    padding-top: 50px;
+}
+
+.barra_horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.barra_horizontal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.barra_horizontal a:hover {
+    color: #ffd700;
+}
