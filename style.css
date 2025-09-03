@@ -120,13 +120,28 @@ body {
     align-items: center;
     background-color: #333;
     color: white;
-    height: 50px;
+    height: 40px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .barra_horizontal {
+    flex-direction: column;
+    height: 77px;
+    width: 420px;
+    position: fixed;
+  }
+}
+@media screen and (min-width: 769px) {
+  .barra_horizontal {
+    display: flex;
+  }
+  
 }
 
 .barra_horizontal a {
